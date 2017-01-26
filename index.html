@@ -1,13 +1,126 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-      <link href="css/style.css" rel="stylesheet">
-    <title>HTML Academy: Барбершоп</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <link href="css/style.css" rel="stylesheet">
+        <title>Магазин Барбершоп</title>
+    </head>
+    <body>
+        <header class="main-header">
+            <div class="container"> <!-- тут контейнер центровщик, для разгона навигации и кнопки-->
+                <nav class="main-navigation"><!-- могут быть несколько навигационных блоков, поэтому добавлятся класс-->
+                    <ul>
+                        <li>
+                            <a href="#">Информация</a>
+                        </li>
+                        <li>
+                            <a href="#">Новости</a>                        
+                        </li>
+                        <li>
+                            <a href="#">Прайс лист</a>
+                        </li>
+                        <li>
+                            <a href="#">Магазин</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="user-block">
+                    <a class="login" href="#">Вход</a>                    
+                </div>
+            </div>
+        </header>
+        <main class="conteiner"><!--тег main общепризнанный. класс добавили для центровки, в целом можно не добавлять, но так удобнее-->
+            <div class="index-logo">
+                <img src="#" alt="Барбершоп"><!-- то что является картинкой содержательной. когда мы его убираем - теряется смысл (убрать лого это косяк). фото товара важны. ФОНЫ. фоны это изображения не содержательны, ессли их убрать, то информация не потеряется, поэтому. КОСЯК если для фона использовать тег IMG-->
+            </div>
+            <section class="features"> <!--вырвать нельзя, поэтому сектион, для выделение смыслового раздела, можно и див использовать-->
+                <div class="features-item"><!--можно сделать и списком, без разницы-->
+                    <b class="features-name">Быстро</b><!--можно заголовком, но b выделяет для слепых интонацией b. изменение интонации не будет. Еще можно span использовать-->
+                    <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки!</p>
+                </div>
+                <div class="features-item">
+                    <b class="features-name">Круто</b>
+                    <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
+                </div>
+                <div class="features-item">
+                    <b class="features-name">Дорого</b>
+                    <p>Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
+                </div>                
+            </section>
+            <div class="index-content"><!--можно section-->
+                <div class="index-content-left">
+                    <h2 class="index-content-title">Новости</h2>
+                    <ul class="news-preview"><!--список, т.к. превью новостей может быть несколько-->
+                        <li>
+                            <p>Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+                            <time datetime="2016-01-11">11 января</time><!--11 января - для людей, 2016-01-11 - для роботов-->
+                        </li>
+                        <li>
+                            <p>В нашей команде пополнение, Борис «Бритва» стриггунец, обадатель множества титулов и наград пополнил наши стройные ряды</p>
+                            <time datetime="2016-01-18">18 января</time>
+                        </li>
+                    </ul>
+                    <a class="btn" href="#">Все новости</a>                    
+                </div>
+                <div class="index-content-right">
+                    <h2 class="index-content-title">Фотогалерея</h2>
+                    <div class="gallery">
+                        <figure class="gallery-content"><!--картинка содержтельная-->
+                            <img src="#" alt="" width="286" height="164">
+                        </figure>
+                        <button class="btn-gallery-prev" type="button">Назад</button>
+                        <button class="btn-gallery-prev" type="button">Вперед</button>
+                    </div>
+                </div>
+            </div>
+            <div class="index-content"><!--можно section-->
+                <div class="index-content-left">
+                    <h2 class="index-content-title">Контактная информация</h2>
+                    <p>Барбершоп «Бородинский»<br>
+                       Адрес: г. Санкт Петербург, ул. Б. Конюшенная, д. 19/8<br>
+                       Телефон: +7 (495) 666-02-66
+                    </p>
+                    <p>Время работы:<br>
+                       Пн - Пт: С 10:00 до 22:00<br>
+                       Сб - Вс: С 10:00 до 19:00
+                    </p>
+                    <a class="btn" href="#">Как проехать</a>
+                    <a class="btn" href="#">Обратная связь</a>
+                </div>
+                <div class="index-content-right">
+                    <h2 class="index-content-right">Записаться</h2>
+                    <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+                    <form class="appointment-form" action="#" method="post"><!--форма без label прохая!!!! т.к. не видно что сделать, когда где то стоишь-->
+                        <input type="text" placeholder="Дата" id="appointment-date" name="appointment-date">
+                        <input type="text" placeholder="Время" id="appointment-time" name="appointment-time">
+                        <input type="text" placeholder="Ваше имя" id="appointment-name" name="appointment-name">
+                        <input type="text" placeholder="Телефон" id="appointment-phone" name="appointment-phone">
+                    </form>                    
+                </div>
+            </div>
+        </main>
+        <footer class="main-footer">
+            <div class="container">
+                <section class="footer-contact">
+                    <p>Барбершоп «Бородинский»<br> Адрес: г. Санкт Петербург, ул. Б. Конюшенная, д. 19/8
+                    </p>
+                    <a href="#">Как нас найти?</a>
+                    <p>Телефон: +7 (495) 666-02-66</p>
+                </section>
+                <section class="footer-social">
+                    <p>Давайте дружить!</p>
+                    <a class="btn-social-vk" href="#">Vk</a>
+                    <a class="btn-social-fb" href="#">Fb</a>
+                    <a class="btn-social-ins" href="#">Inst</a>
+                </section>
+                <section class="footer-copyright">
+                    <p>Разработано:</p>
+                    <a class= "btn" href="#">Htmlacademy.ru</a>
+                </section>
+            </div>
+        </footer>
+    </body>
 </html>
