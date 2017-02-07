@@ -67,16 +67,18 @@
                             <time datetime="2016-01-18">18 января</time>
                         </li>
                     </ul>
-                    <a class="btn" href="#">Все новости</a>                    
+                    <a class="button news-button" href="#">Все новости</a>                    
                 </div>
                 <div class="index-content-right">
                     <h2 class="index-content-title">Фотогалерея</h2>
                     <div class="gallery">
                         <figure class="gallery-content"><!--картинка содержтельная-->
-                            <img src="/img/gallery-01.jpg" alt="Фото салона" width="328" height="164">
+                            <a href="#">
+                                <img src="/img/gallery-01.jpg" alt="Фото салона" width="328" height="164">
+                            </a>
                         </figure>
-                        <button class="btn-gallery-prev" type="button">Назад</button>
-                        <button class="btn-gallery-prev" type="button">Вперед</button>
+                        <button class="button galery-button">Назад</button>
+                        <button class="button galery-button">Вперед</button>
                     </div>
                 </div>
             </div>
@@ -102,6 +104,7 @@
                         <input type="text" placeholder="Время" id="appointment-time" name="appointment-time">
                         <input type="text" placeholder="Ваше имя" id="appointment-name" name="appointment-name">
                         <input type="text" placeholder="Телефон" id="appointment-phone" name="appointment-phone">
+                        <input type="button" value="Отправить">
                     </form>                    
                 </div>
             </div>
@@ -119,6 +122,7 @@
                     <a class="btn-social-vk" href="#">Vk</a>
                     <a class="btn-social-fb" href="#">Fb</a>
                     <a class="btn-social-ins" href="#">Inst</a>
+                    <!--<a class="btn-social-new" href="#">New</a>-->
                 </section>
                 <section class="footer-copyright">
                     <p>Разработано:</p>
