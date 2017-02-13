@@ -8,7 +8,10 @@
     </head>
     <body>
         <header class="main-header">
-            <div class="container"> <!-- тут контейнер центровщик, для разгона навигации и кнопки-->
+            <div class="container clearfix"> <!-- тут контейнер центровщик, для разгона навигации и кнопки-->
+                <div class="logo-header">
+                <a><img src="/img/logo-header.png" alt="Логотип" width="111px" height="24px"></a>
+                </div>
                 <nav class="main-navigation"><!-- могут быть несколько навигационных блоков, поэтому добавлятся класс-->
                     <ul>
                         <li>
@@ -34,11 +37,11 @@
                 </div>
             </div>
         </header>
-        <main class="conteiner"><!--тег main общепризнанный. класс добавили для центровки, в целом можно не добавлять, но так удобнее-->
+        <main class="container"><!--тег main общепризнанный. класс добавили для центровки, в целом можно не добавлять, но так удобнее-->
             <div class="index-logo">
                 <img src="/img/logo-big.png" alt="Барбершоп" width="368" height="204"><!-- то что является картинкой содержательной. когда мы его убираем - теряется смысл (убрать лого это косяк). фото товара важны. ФОНЫ. фоны это изображения не содержательны, ессли их убрать, то информация не потеряется, поэтому. КОСЯК если для фона использовать тег IMG-->
             </div>
-            <section class="features"> <!--вырвать нельзя, поэтому сектион, для выделение смыслового раздела, можно и див использовать-->
+            <section class="features clearfix"> <!--вырвать нельзя, поэтому сектион, для выделение смыслового раздела, можно и див использовать-->
                 <div class="features-item"><!--можно сделать и списком, без разницы-->
                     <b class="features-name">Быстро</b><!--можно заголовком, но b выделяет для слепых интонацией b. изменение интонации не будет. Еще можно span использовать-->
                     <img src="img/rhombus.png" alt="rhombus">
@@ -55,7 +58,7 @@
                     <p>Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
                 </div>                
             </section>
-            <div class="index-content"><!--можно section-->
+            <div class="index-content clearfix"><!--можно section-->
                 <div class="index-content-left">
                     <h2 class="index-content-title">Новости</h2>
                     <ul class="news-preview"><!--список, т.к. превью новостей может быть несколько-->
@@ -83,7 +86,7 @@
                     </div>
                 </div>
             </div>
-            <div class="index-content"><!--можно section-->
+            <div class="index-content clearfix"><!--можно section-->
                 <div class="index-content-left">
                     <h2 class="index-content-title">Контактная информация</h2>
                     <p>Барбершоп «Бородинский»<br>
@@ -111,7 +114,7 @@
             </div>
         </main>
         <footer class="main-footer">
-            <div class="container">
+            <div class="container clearfix">
                 <section class="footer-contact">
                     <p>Барбершоп «Бородинский»<br> Адрес: г. Санкт Петербург, ул. Б. Конюшенная, д. 19/8
                     </p>

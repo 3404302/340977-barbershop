@@ -24,3 +24,86 @@ h3 {
     line-height: 30px;
 }
 
+.container {
+    width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.main-header {
+    min-height: 70px;
+}
+
+.main-navigation {
+    float: left;
+    width: 780px;
+}
+
+.user-block {
+    width: 140px;
+    float: right;
+}
+
+.index-logo {
+    width: 368px;
+    height:  204px;
+    margin: 0 auto 25px auto;
+}
+
+.features {
+    margin-bottom: 80px;
+}
+
+.features-item {
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+}
+
+.features-item:last-child {
+    margin-right: 0;
+}
+
+.index-content {
+    padding: 50px 80px;
+    margin-bottom: 35px;
+    background-color: beige;
+}
+
+.index-content-left {
+    float: left;
+    width: 380px; /*так как ниже тоже разные*/
+}
+
+.index-content-right {
+    float: right;
+    width: 300px;
+}
+
+.main-footer {
+    margin-top: 65px;
+    padding-top: 60px;
+    padding-bottom: 65px;
+}
+
+.footer-contact {
+    float: left;
+    width: 320px;
+    margin-right: 60px;
+}
+
+.footer-social {
+    float: left;
+    width: 180px;
+}
+
+.footer-copyright {
+    float: right;
+    width: 180px;
+}

@@ -10,7 +10,7 @@
         <header class="main-header"> <!-- header-->
             <div class="container">
                 <div class="logo-header">
-                <a href="#"><img src="/img/logo-header.png" alt="Логотип" width="111px" height="24px"></a>
+                <a><img src="/img/logo-header.png" alt="Логотип" width="111px" height="24px"></a>
                 </div>
                 <nav class="main-navigation">
                     <ul>
@@ -38,27 +38,50 @@
             </div>
             <div class="catalog-content">
                 <div class="left-column">
-                    <form class="filter" method="post" action="#" >
+                    <form class="filter" method="get" action="#" > <!--Гет для удобства ссылки-->
                         <h3>Производители:</h3>
-                        <input type="checkbox" name="baxter" id="baxter" checked>
-                        <label for="baxter">Baxter of california</label>
-                        <input type="checkbox" name="natty" id="natty">
-                        <label for="natty">Mr Natty</label>
-                        <input type="checkbox" name="suavecito" id="suavecito" checked>
-                        <label for="suavecito">Suavecito</label>
-                        <input type="checkbox" name="mg" id="mg">
-                        <label for="mg">Malin+Goetz</label>
-                        <input type="checkbox" name="murray" id="murray">
-                        <label for="murray">Murray's</label>
-                        <input type="checkbox" name="american" id="american" checked>
-                        <label for="american">American crew</label>
+                        <ul class="filter-list-checkbox">
+                            <li>
+                                <input type="checkbox" name="baxter" id="baxter" checked>
+                                <label for="baxter">Baxter of california</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="natty" id="natty">
+                                <label for="natty">Mr Natty</label>                                
+                            </li>                        
+                            <li>
+                                <input type="checkbox" name="suavecito" id="suavecito" checked>
+                                <label for="suavecito">Suavecito</label>
+                            </li>                        
+                            <li>
+                                <input type="checkbox" name="mg" id="mg">
+                                <label for="mg">Malin+Goetz</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="murray" id="murray">
+                                <label for="murray">Murray's</label>
+                            </li>
+                        
+                            <li>
+                                <input type="checkbox" name="american" id="american" checked>
+                                <label for="american">American crew</label>
+                            </li>
+                        </ul>
                         <h3>Группы товаров:</h3>
-                        <input type="radio" name="britva" id="britva">  
-                        <label for="britva">Бритвенные принадлежности</label>
-                        <input type="radio" name="healthcare" id="healthcare">
-                        <label for="healthcare">Средства для ухода</label>
-                        <input type="radio" name="accessories" id="accessories">
-                        <label for="accessories">Аксессуары</label>
+                        <ul class="filter-list-radio">
+                            <li>
+                                <input type="radio" name="britva" id="britva">  
+                                <label for="britva">Бритвенные принадлежности</label> 
+                            </li> 
+                            <li>
+                                <input type="radio" name="healthcare" id="healthcare">
+                                <label for="healthcare">Средства для ухода</label>
+                            </li>  
+                            <li>
+                                <input type="radio" name="accessories" id="accessories">
+                                <label for="accessories">Аксессуары</label>
+                            </li>  
+                        </ul>
                         <input type="button" value="Показать">
                     </form>
                 </div>
@@ -68,10 +91,13 @@
                             <a class="catalog-item-img" href="#">
                                 <img src="/img/goods-04.jpg" alt="Набор для путешественника «Baxter of California»" width="220px" height="165px">
                             </a>
-                            <a class="catalog-item-title" href="#">Набор для путешественника <span>«Baxter of California»</span></a>
+                            <a class="catalog-item-title" href="#">
+                                <span class="category-product">Набор для путешественника</span>
+                                <span class="item-name">«Baxter of California»</span>
+                            </a> <!--по вебинару это заголовок у товара H3???-->
                             <div class="catalog-item-price">
                                 <span>2 900 руб.</span>
-                                <button class="button catalog-item-button">Купить</button>
+                                <a href="#" class="button catalog-item-button">Купить</a>
                             </div>
                         </article>
                         <article class="catalog-item">
